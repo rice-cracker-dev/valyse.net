@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply duration-150;
+}
+
 :root {
   @apply bg-base-100 tracking-wide;
 
   font-family: 'Inter Variable', sans-serif;
+}
+
+.font-product-name {
+  font-family: 'Outfit Variable', sans-serif;
 }
 
 .btn {

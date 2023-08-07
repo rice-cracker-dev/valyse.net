@@ -167,6 +167,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource-variable/inter/-/inter-5.0.8.tgz#bd6d61ece1019c59b0ac330a138d48a34dfa6d8c"
   integrity sha512-WkYfFNccmEIeL2fNg0mYeLWqOoB7xD8MFxFRc4IwbSP2o8ZaBt36v5aW4by4MyrgGRMNk7uNi5LbvYKq6clPjw==
 
+"@fontsource-variable/outfit@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/outfit/-/outfit-5.0.8.tgz#b36c731d3b0283d931438d3ffcec5d1149fd47fa"
+  integrity sha512-j4JHCbuk2+Nl7PwTVT+RJKTDMDw7TWWt/85CIucD7KvOS7Iv0IiymE5ur21/aFbTwamOHrXX91WrQZHN7QDrmw==
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.10.tgz#5a3ffe32cc9306365fb3fd572596cd602d5e12d2"
