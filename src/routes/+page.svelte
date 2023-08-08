@@ -182,10 +182,13 @@
           class="relative bg-gradient-to-b from-[#E93F3F]/10 via-[#FF7475]/10 to-[#FFD055]/10 h-[32rem] w-[32rem] rounded-[50%] blur-[96px] col-start-1 row-start-1 mx-32"
         />
       </div>
-      <button class="btn border-0 bg-white/5 hover:bg-white/10 shadow-inner shadow-white/10 gap-4">
+      <a
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        class="btn border-0 bg-white/5 hover:bg-white/10 shadow-inner shadow-white/10 gap-4"
+      >
         <Icon icon="ph:paper-plane-right-bold" class="duration-150" />
         Get started
-      </button>
+      </a>
     </div>
   </div>
 </div>
