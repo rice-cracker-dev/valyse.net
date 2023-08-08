@@ -7,9 +7,9 @@
 </script>
 
 <div
-  class="border-[1px] bg-neutral p-4 rounded-lg flex flex-col gap-4 shadow-2xl {isSpecial
-    ? 'border-accent shadow-accent/10'
-    : 'border-base-content/20 shadow-transparent hover:border-accent hover:shadow-accent/10'}"
+  class="border-[1px] bg-neutral/50 p-4 rounded-lg flex flex-col gap-4 shadow-2xl {isSpecial
+    ? 'border-accent shadow-accent/10 bg-neutral'
+    : 'border-base-content/20 shadow-transparent hover:bg-neutral hover:border-accent hover:shadow-accent/10'}"
 >
   <div class="flex items-center gap-4">
     <div class="p-2 border-[1px] border-base-content/20 bg-base-100 rounded-lg">

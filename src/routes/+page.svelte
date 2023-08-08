@@ -29,7 +29,7 @@
   });
 </script>
 
-<div class="flex flex-col items-center my-32">
+<div class="relative flex flex-col items-center mt-64 mb-32">
   <div class="w-full md:max-w-7xl flex gap-8 items-center">
     <div class="flex-1 flex flex-col">
       <p class="text-5xl font-semibold tracking-wider">
@@ -42,9 +42,11 @@
       </p>
 
       <div class="mt-auto flex items-center gap-4">
-        <button class="btn btn-neutral text-white shadow-inner shadow-white/5 gap-4">
-          <Icon icon="ph:paper-plane-right-bold" />
-          Let's get started
+        <button id="btn-get-started">
+          <div class="p-4 flex items-center gap-4 rounded-lg shadow-inner shadow-white/5 duration-150">
+            <Icon icon="ph:paper-plane-right-bold" class="duration-150" />
+            Let's get started
+          </div>
         </button>
         <button class="btn btn-neutral"> Get help </button>
       </div>
@@ -93,7 +95,10 @@
           </button>
         {/each}
       </div>
-      <img src={currentTheme.image} alt="" class="w-full rounded-lg" />
+      <div class="relative w-full">
+        <img src={currentTheme.image} alt="" class="absolute rounded-lg blur-xl top-8" />
+        <img src={currentTheme.image} alt="" class="relative rounded-lg" />
+      </div>
     </div>
   </div>
 </div>
@@ -134,3 +139,16 @@
     </div>
   </div>
 </div>
+
+<style lang="postcss">
+  #btn-get-started {
+    @apply btn btn-neutral border-0 !p-0 normal-case text-white shadow-white/5 duration-150 hover:bg-neutral;
+  }
+
+  #btn-get-started:hover {
+    box-shadow:
+      -8px 0 32px #5277ff40,
+      0 0 32px #ff747540,
+      8px 0 32px #ffd05540;
+  }
+</style>
