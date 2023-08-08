@@ -7,7 +7,7 @@
 }
 
 :root {
-  @apply bg-base-100 tracking-wide;
+  @apply overflow-x-hidden bg-base-100 tracking-wide;
 
   font-family: 'Inter Variable', sans-serif;
 }
