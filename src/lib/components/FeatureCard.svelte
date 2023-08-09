@@ -26,11 +26,12 @@
     ? 'border-accent shadow-accent/10 bg-neutral'
     : 'border-base-content/20 shadow-transparent hover:bg-neutral hover:border-accent hover:shadow-accent/10'}"
 >
-  <div
-    class="absolute overflow-hidden rounded-[50%] blur-3xl duration-0"
-    style="left: {glowOffsetX}px; top: {glowOffsetY}px"
-  >
-    <div class="w-16 h-16 duration-500 {isMouseHover ? 'bg-white/50 scale-100' : 'bg-transparent scale-0'}" />
+  <div class="absolute duration-0 blur-3xl rounded-[50%]" style="left: {glowOffsetX}px; top: {glowOffsetY}px">
+    <div
+      class="relative w-16 h-16 -translate-x-1/2 -translate-y-1/2 duration-500 {isMouseHover
+        ? 'bg-white/30 scale-100'
+        : 'bg-transparent scale-0'}"
+    />
   </div>
   <div class="flex items-center gap-4">
     <div class="p-2 border-[1px] border-base-content/20 bg-base-100 rounded-lg">
