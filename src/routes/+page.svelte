@@ -45,9 +45,9 @@
 <div class="relative flex items-center justify-center min-h-[100svh]">
   <div class="w-full md:max-w-7xl flex gap-8 items-center">
     <div class="flex-1 flex flex-col">
-      <p class="text-5xl font-semibold tracking-wider">
-        <span class="text-white">The future of ROBLOX exploiting</span>
-        is here
+      <p class="text-6xl font-semibold tracking-wider">
+        <span class="text-white">The Future Of ROBLOX Exploiting</span>
+        Is Here
       </p>
 
       <p class="text-lg text-base-content/50 my-12">
