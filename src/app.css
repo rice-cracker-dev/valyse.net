@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 * {
-  @apply delay-0 duration-150;
+  @apply box-border delay-0 duration-150;
 }
 
 :root {
-  @apply overflow-x-hidden bg-base-100 tracking-wide;
+  @apply overflow-x-hidden bg-base-100 text-sm tracking-wide md:text-lg;
 
   font-family: 'Inter Variable', sans-serif;
 }

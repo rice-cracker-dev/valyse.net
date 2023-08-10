@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
 
   let isVisible = false;
@@ -6,7 +6,9 @@
   onMount(() => {
     const isCaptchaClosed = localStorage.getItem('isCaptchaClosed');
 
-    isVisible = isCaptchaClosed === null;
+    if (Math.random() < 0.25) {
+      isVisible = isCaptchaClosed === null;
+    }
   });
 </script>
 

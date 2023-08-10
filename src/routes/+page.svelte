@@ -42,21 +42,23 @@
   <title>Valyse V2 website</title>
 </svelte:head>
 
-<div class="relative flex items-center justify-center min-h-[100svh]">
-  <div class="w-full md:max-w-7xl flex gap-8 items-center">
-    <div class="flex-1 flex flex-col">
-      <p class="text-6xl font-semibold tracking-wider">
+<div class="relative flex items-center justify-center min-h-[100svh] mx-16">
+  <div class="w-full md:max-w-7xl flex gap-8 items-center flex-1">
+    <div class="flex-1 flex flex-col items-center lg:items-start">
+      <p class="text-center lg:text-left text-3xl xl:text-5xl font-semibold tracking-wider max-w-lg xl:max-w-3xl">
         <span class="text-white">The Future Of ROBLOX Exploiting</span>
         Is Here
       </p>
 
-      <p class="text-lg text-base-content/50 my-12">
+      <p class="text-center lg:text-left text-sm lg:text-lg text-base-content/50 my-6 xl:my-12 max-w-sm xl:max-w-xl">
         Download the #1 Roblox exploit for free in 2023. Reliable, no key system and superior scripts execution power.
       </p>
 
-      <div class="mt-auto flex items-center gap-4">
+      <div class="w-64 lg:w-auto lg:mt-auto flex flex-col items-stretch lg:flex-row mt-8 lg:items-center gap-4">
         <button id="btn-get-started">
-          <div class="p-4 flex items-center gap-4 rounded-lg shadow-inner shadow-white/5 duration-150">
+          <div
+            class="p-4 flex w-full justify-center items-center gap-4 rounded-lg shadow-inner shadow-white/5 duration-150"
+          >
             <Icon icon="ph:paper-plane-right-bold" class="duration-150" />
             Let's get started
           </div>
@@ -64,7 +66,7 @@
         <button class="btn btn-neutral"> Get help </button>
       </div>
     </div>
-    <div class="flex-1 relative flex justify-end select-none">
+    <div class="relative justify-end select-none hidden lg:flex scale-75 xl:scale-100">
       <!-- glow -->
       <img src="/logo_accent.svg" alt="" class="absolute blur-xl opacity-25" />
       <img src="/logo_accent.svg" alt="" class="relative" />
@@ -72,7 +74,7 @@
   </div>
 </div>
 
-<div class="relative flex flex-col items-center gap-4">
+<div class="relative flex flex-col items-center gap-4 mx-8">
   <p class="font-semibold text-4xl">Features</p>
   <div class="relative my-12 max-w-5xl flex flex-col gap-16">
     <div class="absolute grid items-center left-0 top-0 -translate-x-1/2 select-none -z-10">
@@ -86,7 +88,7 @@
       />
     </div>
 
-    <div class="grid grid-cols-3 gap-8 w-full">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
       <FeatureCard icon="ph:key-fill" header="No key system" isSpecial>we use ad system instead lmao</FeatureCard>
       <FeatureCard icon="ph:terminal-fill" header="Custom DLL">
         Valyse has a powerful custom DLL with limitless execution power for scripts.
@@ -108,7 +110,7 @@
 
     <div class="w-full max-w-5xl flex flex-col items-center">
       <p class="font-semibold text-2xl">Theming</p>
-      <div class="my-12 flex items-center gap-8">
+      <div class="my-12 flex items-center flex-wrap justify-center gap-4 lg:gap-8">
         {#each themes as theme, index}
           <button
             on:click={() => startThemeInterval(index)}
@@ -127,7 +129,7 @@
   </div>
 </div>
 
-<div class="relative flex flex-col items-center mt-32 gap-4">
+<div class="relative flex flex-col items-center mt-32 gap-4 mx-8">
   <div class="absolute grid items-center left-0 bottom-0 select-none -z-10">
     <div
       class="relative bg-gradient-to-b from-[#E93F3F]/10 via-[#FF7475]/10 to-[#FFD055]/10 h-[32rem] w-[32rem] translate-x-1/3 rounded-[50%] blur-[96px] col-start-1 row-start-1 mx-32"
@@ -135,7 +137,7 @@
   </div>
 
   <p class="font-semibold text-4xl">Pricing</p>
-  <div class="my-12 grid grid-cols-2 gap-16 w-full max-w-3xl">
+  <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-16 w-full max-w-3xl">
     <div class="border-[1px] border-base-content/20 bg-neutral/50 p-4 rounded-lg flex flex-col gap-4 font-product-name">
       <p class="text-xs tracking-[0.25rem]">VALYSE</p>
       <p class="text-2xl text-white">Free</p>
@@ -170,9 +172,9 @@
   </div>
 </div>
 
-<div class="flex flex-col items-center my-64 gap-4">
-  <div class="w-full max-w-5xl flex items-center gap-8">
-    <div class="flex-1 flex flex-col gap-2">
+<div class="flex flex-col items-center my-64 gap-4 mx-8">
+  <div class="w-full max-w-5xl flex flex-col lg:flex-row items-center gap-8">
+    <div class="flex-1 flex flex-col gap-2 text-center lg:text-left">
       <p class="text-4xl font-semibold text-white">What are you waiting for?</p>
       <p class="text-base-content/50">The best exploit on the market at your fingertips.</p>
     </div>

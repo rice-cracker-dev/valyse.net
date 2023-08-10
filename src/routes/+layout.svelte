@@ -12,6 +12,10 @@
 
 <Navbar />
 
-<slot />
+<div class="flex flex-col min-h-[100svh]">
+  <div class="flex-1">
+    <slot />
+  </div>
 
-<Footer />
+  <Footer />
+</div>
