@@ -8,22 +8,9 @@
 
 <svelte:window bind:scrollY />
 
-<div class="relative w-full flex justify-center">
-  <div class="absolute grid items-center -top-16 grid-cols-1 grid-rows-1 overflow-visible select-none -z-20">
-    <div
-      class="absolute top-0 left-0 right-0 h-64 bg-grid"
-      style="-webkit-mask-image: radial-gradient(#000, transparent, transparent);"
-    />
-    <div class="relative bg-[#3F64E9]/30 w-[64rem] h-24 rounded-[50%] blur-[96px] col-start-1 row-start-1 mr-64" />
-    <div
-      class="relative bg-[#E93F3F]/30 w-[64rem] h-32 rounded-[50%] blur-[96px] col-start-1 row-start-1 mx-32 -z-10"
-    />
-    <div class="relative bg-[#FFB800]/30 w-[64rem] h-24 rounded-[50%] blur-[96px] col-start-1 row-start-1 ml-64" />
-  </div>
-
+<div class="fixed top-8 lg:top-16 left-0 right-0 flex items-stretch justify-center z-[9999]">
   <div
-    class="mx-8 max-w-3xl lg:max-w-5xl xl:max-w-7xl fixed top-0 w-full md:m-8 lg:m-16 rounded-lg flex gap-8 text-[16px] z-[9999] border-[1px] p-8 lg:px-4 lg:py-2 bg-transparent {scrollY >
-    0
+    class="flex items-center max-w-7xl p-4 w-full bg-transparent border-[1px] mx-8 rounded-lg {scrollY > 0
       ? 'border-base-content/20 backdrop-blur-xl backdrop-brightness-50'
       : 'border-transparent'}"
   >

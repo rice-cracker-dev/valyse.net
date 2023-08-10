@@ -63,7 +63,7 @@
             Let's get started
           </div>
         </button>
-        <button class="btn btn-neutral"> Get help </button>
+        <button class="btn btn-neutral">Get help</button>
       </div>
     </div>
     <div class="relative justify-end select-none hidden lg:flex scale-75 xl:scale-100">
@@ -77,17 +77,6 @@
 <div class="relative flex flex-col items-center gap-4 mx-8">
   <p class="font-semibold text-4xl">Features</p>
   <div class="relative my-12 max-w-5xl flex flex-col gap-16">
-    <div class="absolute grid items-center left-0 top-0 -translate-x-1/2 select-none -z-10">
-      <div
-        class="relative bg-gradient-to-b from-[#E93F3F]/10 via-[#FF7475]/10 to-[#FFD055]/10 h-[32rem] w-[32rem] rounded-[50%] blur-[96px] col-start-1 row-start-1 mx-32"
-      />
-    </div>
-    <div class="absolute grid items-center right-0 bottom-0 translate-x-1/2 select-none -z-10">
-      <div
-        class="relative bg-gradient-to-b from-[#E93F3F]/10 via-[#FF7475]/10 to-[#FFD055]/10 h-[32rem] w-[32rem] rounded-[50%] blur-[96px] col-start-1 row-start-1 mx-32"
-      />
-    </div>
-
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
       <FeatureCard icon="ph:key-fill" header="No key system" isSpecial>we use ad system instead lmao</FeatureCard>
       <FeatureCard icon="ph:terminal-fill" header="Custom DLL">
@@ -130,12 +119,6 @@
 </div>
 
 <div class="relative flex flex-col items-center mt-32 gap-4 mx-8">
-  <div class="absolute grid items-center left-0 bottom-0 select-none -z-10">
-    <div
-      class="relative bg-gradient-to-b from-[#E93F3F]/10 via-[#FF7475]/10 to-[#FFD055]/10 h-[32rem] w-[32rem] translate-x-1/3 rounded-[50%] blur-[96px] col-start-1 row-start-1 mx-32"
-    />
-  </div>
-
   <p class="font-semibold text-4xl">Pricing</p>
   <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-16 w-full max-w-3xl">
     <div class="border-[1px] border-base-content/20 bg-neutral/50 p-4 rounded-lg flex flex-col gap-4 font-product-name">
@@ -179,11 +162,6 @@
       <p class="text-base-content/50">The best exploit on the market at your fingertips.</p>
     </div>
     <div class="relative m-8">
-      <div class="absolute grid items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none -z-10">
-        <div
-          class="relative bg-gradient-to-b from-[#E93F3F]/10 via-[#FF7475]/10 to-[#FFD055]/10 h-[32rem] w-[32rem] rounded-[50%] blur-[96px] col-start-1 row-start-1 mx-32"
-        />
-      </div>
       <a
         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         class="btn border-0 bg-white/5 hover:bg-white/10 shadow-inner shadow-white/10 gap-4"
