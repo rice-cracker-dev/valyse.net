@@ -10,12 +10,14 @@
 
 <Troll />
 
-<Navbar />
+<div class="max-w-[100vw]">
+  <Navbar />
 
-<div class="flex flex-col min-h-[100svh]">
-  <div class="flex-1">
-    <slot />
+  <div class="flex flex-col min-h-[100svh]">
+    <div class="flex-1">
+      <slot />
+    </div>
+
+    <Footer />
   </div>
-
-  <Footer />
 </div>
