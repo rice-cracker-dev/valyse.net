@@ -13,8 +13,8 @@
     class="absolute -top-12 left-32 right-32 h-32 bg-gradient-to-r from-[#3F64E9]/20 via-[#E93F3F]/40 to-[#FFB800]/20 rounded-[50%] z-0 blur-3xl"
   />
   <div
-    class="absolute -top-12 left-32 right-32 bg-grid h-48 rounded-[50%]"
-    style="-webkit-mask-image: radial-gradient(#000, transparent, transparent)"
+    class="absolute -top-12 left-32 right-32 bg-grid h-32 rounded-[50%]"
+    style="-webkit-mask-image: radial-gradient(#000, transparent)"
   />
 </div>
 
@@ -28,10 +28,10 @@
       <img src="/logo.svg" alt="" class="w-8" />
     </div>
     <div class="flex-1 justify-start lg:justify-center items-center gap-4 lg:gap-16 hidden md:flex">
-      <a href="/" class="btn btn-ghost">Home</a>
-      <a href="/" class="btn btn-ghost">FAQ</a>
-      <a href="/" class="btn btn-ghost">Features</a>
-      <a href="/" class="btn btn-ghost">Pricing</a>
+      <a href="/#home" class="btn btn-ghost">Home</a>
+      <a href="/faq" class="btn btn-ghost">FAQ</a>
+      <a href="/#features" class="btn btn-ghost">Features</a>
+      <a href="/#pricing" class="btn btn-ghost">Pricing</a>
     </div>
     <div class="sm:flex items-center gap-2 hidden ml-auto">
       <button class="btn btn-ghost text-xl">
@@ -66,19 +66,19 @@
       transition:slide
       class="flex flex-col items-stretch bg-neutral border-base-content/10 border-t-[1px] rounded-t-xl p-4"
     >
-      <a href="/" class="btn btn-ghost justify-start">
+      <a href="/#home" class="btn btn-ghost justify-start">
         <Icon icon="ph:house-fill" />
         Home
       </a>
-      <a href="/" class="btn btn-ghost justify-start">
+      <a href="/faq" class="btn btn-ghost justify-start">
         <Icon icon="ph:question-fill" />
         FAQ
       </a>
-      <a href="/" class="btn btn-ghost justify-start">
+      <a href="/#features" class="btn btn-ghost justify-start">
         <Icon icon="ph:desktop-fill" />
         Features
       </a>
-      <a href="/" class="btn btn-ghost justify-start">
+      <a href="/#pricing" class="btn btn-ghost justify-start">
         <Icon icon="ph:currency-circle-dollar-fill" />
         Pricing
       </a>

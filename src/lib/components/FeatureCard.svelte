@@ -26,9 +26,9 @@
     ? 'border-accent shadow-accent/10 bg-neutral'
     : 'border-base-content/20 shadow-transparent hover:bg-neutral hover:border-accent hover:shadow-accent/10'}"
 >
-  <div class="absolute duration-0 blur-3xl rounded-[50%]" style="left: {glowOffsetX}px; top: {glowOffsetY}px">
+  <div class="absolute duration-0 blur-[96px] rounded-[50%]" style="left: {glowOffsetX}px; top: {glowOffsetY}px">
     <div
-      class="relative w-16 h-16 -translate-x-1/2 -translate-y-1/2 duration-500 {isMouseHover
+      class="relative opacity-25 w-48 h-48 -translate-x-1/2 -translate-y-1/2 duration-500 {isMouseHover
         ? 'bg-white/30 scale-100'
         : 'bg-transparent scale-0'}"
     />

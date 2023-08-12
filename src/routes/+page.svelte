@@ -42,7 +42,7 @@
   <title>Valyse V2 website</title>
 </svelte:head>
 
-<div class="relative flex items-center justify-center min-h-[100svh] mx-16">
+<div id="home" class="relative flex items-center justify-center min-h-[100svh] mx-16">
   <div class="w-full md:max-w-7xl flex gap-8 items-center flex-1">
     <div class="flex-1 flex flex-col items-center lg:items-start">
       <p class="text-center lg:text-left text-3xl xl:text-5xl font-semibold tracking-wider max-w-lg xl:max-w-3xl">
@@ -55,14 +55,52 @@
       </p>
 
       <div class="w-64 lg:w-auto lg:mt-auto flex flex-col items-stretch lg:flex-row mt-8 lg:items-center gap-4">
-        <button id="btn-get-started">
-          <div
-            class="p-4 flex w-full justify-center items-center gap-4 rounded-lg shadow-inner shadow-white/5 duration-150"
-          >
-            <Icon icon="ph:paper-plane-right-bold" class="duration-150" />
-            Let's get started
+        <a
+          href="/#get-started"
+          class="btn btn-neutral border-0 !p-0 normal-case text-white shadow-white/5 duration-150 hover:bg-neutral group"
+        >
+          <div class="relative">
+            <div
+              class="absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center gap-4 scale-75 group-hover:scale-100"
+            >
+              <Icon
+                icon="ph:star-fill"
+                class="opacity-0 group-hover:opacity-100 group-hover:-translate-x-12 group-hover:-translate-y-8 text-[#c9ffbe] duration-100 drop-shadow-[0_0_8px_#c9ffbe]"
+              />
+              <Icon
+                icon="ph:star-fill"
+                class="opacity-0 group-hover:opacity-100 group-hover:-translate-x-12 group-hover:translate-y-10 text-[#ffefad] duration-150 drop-shadow-[0_0_8px_#ffefad]"
+              />
+              <Icon
+                icon="ph:star-fill"
+                class="opacity-0 group-hover:opacity-100 group-hover:-translate-x-4 group-hover:-translate-y-10 text-[#b4faff] duration-200 drop-shadow-[0_0_8px_#b4faff]"
+              />
+              <Icon
+                icon="ph:star-fill"
+                class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-12 text-[#846edb] duration-250 drop-shadow-[0_0_8px_#846edb]"
+              />
+              <Icon
+                icon="ph:star-fill"
+                class="opacity-0 group-hover:opacity-100 group-hover:translate-x-8 group-hover:-translate-y-8 text-[#ffaee9] duration-150 drop-shadow-[0_0_8px_#ffaee9]"
+              />
+              <Icon
+                icon="ph:star-fill"
+                class="opacity-0 group-hover:opacity-100 group-hover:translate-x-10 group-hover:translate-y-12 text-[#ff7878] duration-200 drop-shadow-[0_0_8px_#ff7878]"
+              />
+            </div>
+
+            <div
+              class="absolute rounded-lg top-0 bottom-0 right-0 left-0 bg-gradient-to-r from-[#5277FF] via-[#FF7475] to-[#FFD055] blur-xl opacity-0 group-hover:opacity-25"
+            />
+
+            <div
+              class="relative p-4 flex w-full justify-center items-center gap-4 rounded-lg shadow-inner shadow-white/5 duration-150"
+            >
+              <Icon icon="ph:paper-plane-right-bold" class="duration-150" />
+              Let's get started
+            </div>
           </div>
-        </button>
+        </a>
         <button class="btn btn-neutral">Get help</button>
       </div>
     </div>
@@ -74,8 +112,8 @@
   </div>
 </div>
 
-<div class="relative">
-  <div class="absolute top-0 bottom-0 right-0 left-0 overflow-hidden opacity-25">
+<div id="features" class="relative">
+  <div class="absolute top-0 bottom-0 right-0 left-0 overflow-hidden opacity-25 select-none">
     <div
       class="absolute w-48 h-48 top-1/4 left-0 -translate-x-16 rounded-[50%] blur-[96px] bg-gradient-to-b from-[#5277FF] via-[#FF7475] to-[#FFD055]"
     />
@@ -84,9 +122,9 @@
     />
   </div>
 
-  <div class="flex flex-col items-center gap-4 mx-8 z-10">
+  <div class="relative flex flex-col items-center gap-4 mx-8 z-10 py-64">
     <p class="text-3xl font-outfit text-accent">Features</p>
-    <div class="relative my-12 max-w-5xl flex flex-col gap-16">
+    <div class="relative my-12 max-w-5xl flex flex-col">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         <FeatureCard icon="ph:key-fill" header="No key system" isSpecial>we use ad system instead lmao</FeatureCard>
         <FeatureCard icon="ph:terminal-fill" header="Custom DLL">
@@ -106,37 +144,36 @@
           速度与激情9 早上好中国 现在我有冰激淋 我很喜欢冰激淋 但是《速度与激情9》比冰激淋
         </FeatureCard>
       </div>
-
-      <div class="w-full max-w-5xl flex flex-col items-center">
-        <p class="text-3xl font-outfit text-accent">Theming</p>
-        <div class="my-12 flex items-center flex-wrap justify-center gap-4 lg:gap-8">
-          {#each themes as theme, index}
-            <button
-              on:click={() => startThemeInterval(index)}
-              class="btn btn-ghost"
-              class:btn-active={currentThemeIndex === index}
-            >
-              {theme.name}
-            </button>
-          {/each}
-        </div>
-        <div class="relative w-full">
-          <img src={currentTheme.image} alt="" class="absolute rounded-lg blur-xl top-8 select-none" />
-          <img src={currentTheme.image} alt="" class="relative rounded-lg" />
-        </div>
-      </div>
     </div>
   </div>
 </div>
 
-<div class="relative mt-32">
-  <div class="absolute top-0 bottom-0 right-0 left-0 overflow-hidden opacity-25">
+<div id="features" class="relative">
+  <div class="relative flex flex-col items-center gap-4 mx-8 z-10 py-64">
+    <p class="text-3xl font-outfit text-accent">Theming</p>
+    <div class="my-12 flex items-center flex-wrap justify-center gap-4 lg:gap-8">
+      {#each themes as theme, index}
+        <button
+          on:click={() => startThemeInterval(index)}
+          class="btn btn-ghost"
+          class:btn-active={currentThemeIndex === index}
+        >
+          {theme.name}
+        </button>
+      {/each}
+    </div>
+    <img src={currentTheme.image} alt="" class="relative rounded-lg" />
+  </div>
+</div>
+
+<div id="pricing" class="relative">
+  <div class="absolute top-0 bottom-0 right-0 left-0 overflow-hidden opacity-25 z-0 select-none">
     <div
       class="absolute w-48 h-48 top-1/2 -translate-y-1/2 left-0 -translate-x-16 rounded-[50%] blur-[96px] bg-gradient-to-b from-[#5277FF] via-[#FF7475] to-[#FFD055]"
     />
   </div>
 
-  <div class="flex flex-col items-center gap-4 mx-8 z-10">
+  <div class="relative flex flex-col items-center gap-4 mx-8 z-10 py-64">
     <p class="text-3xl font-outfit text-accent">Pricing</p>
     <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-16 w-full max-w-3xl">
       <div class="border-[1px] border-base-content/20 bg-neutral/50 p-4 rounded-lg flex flex-col gap-4 font-outfit">
@@ -174,8 +211,8 @@
   </div>
 </div>
 
-<div class="flex flex-col items-center my-64 gap-4 mx-8">
-  <div class="w-full max-w-5xl flex flex-col lg:flex-row items-center gap-8 p-4">
+<div id="get-started" class="flex flex-col items-center my-64 gap-4 mx-8">
+  <div class="w-full max-w-5xl flex flex-col lg:flex-row items-center gap-8 p-4 py-64">
     <div class="flex-1 flex flex-col gap-2 text-center lg:text-left">
       <p class="text-4xl font-semibold text-white">What are you waiting for?</p>
       <p class="text-base-content/50">The best exploit on the market at your fingertips.</p>
@@ -194,16 +231,3 @@
     </div>
   </div>
 </div>
-
-<style lang="postcss">
-  #btn-get-started {
-    @apply btn btn-neutral border-0 !p-0 normal-case text-white shadow-white/5 duration-150 hover:bg-neutral;
-  }
-
-  #btn-get-started:hover {
-    box-shadow:
-      -8px 0 32px #5277ff40,
-      0 0 32px #ff747540,
-      8px 0 32px #ffd05540;
-  }
-</style>
