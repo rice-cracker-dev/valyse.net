@@ -59,7 +59,7 @@
           href="/#get-started"
           class="btn btn-neutral border-0 !p-0 normal-case text-white shadow-white/5 duration-150 hover:bg-neutral group"
         >
-          <div class="relative">
+          <div class="relative w-full">
             <div
               class="absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center gap-4 scale-75 group-hover:scale-100"
             >
