@@ -29,7 +29,7 @@
     </div>
     <div class="flex-1 justify-start lg:justify-center items-center gap-4 lg:gap-16 hidden md:flex">
       <a href="/#home" class="btn btn-ghost">Home</a>
-      <a href="/faq" class="btn btn-ghost">FAQ</a>
+      <a href="/faq#faq" class="btn btn-ghost">FAQ</a>
       <a href="/#features" class="btn btn-ghost">Features</a>
       <a href="/#pricing" class="btn btn-ghost">Pricing</a>
     </div>
@@ -67,7 +67,7 @@
         <Icon icon="ph:house-fill" />
         Home
       </a>
-      <a href="/faq" class="btn btn-ghost justify-start">
+      <a href="/faq#faq" class="btn btn-ghost justify-start">
         <Icon icon="ph:question-fill" />
         FAQ
       </a>

@@ -7,7 +7,7 @@
   let isExpanded = false;
 </script>
 
-<div class="flex flex-col items-stretch border-base-content/20 border-b-[1px] py-4">
+<div id="faq" class="flex flex-col items-stretch border-base-content/20 border-b-[1px] py-4">
   <button on:click={() => (isExpanded = !isExpanded)} class="flex items-center">
     <div class="flex items-center text-lg w-full">
       <p class="text-white font-outfit">{header}</p>
