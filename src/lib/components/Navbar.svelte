@@ -22,7 +22,7 @@
   <div
     class="flex items-center max-w-7xl p-4 w-full bg-transparent border-[1px] mx-8 rounded-lg {scrollY > 0
       ? 'border-base-content/20 backdrop-blur-xl backdrop-brightness-50'
-      : 'border-transparent backdrop-brightness-90'}"
+      : 'border-transparent'}"
   >
     <div class="flex items-center gap-2">
       <img src="/logo.svg" alt="" class="w-8" />

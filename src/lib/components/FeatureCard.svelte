@@ -8,7 +8,7 @@
 </script>
 
 <GlowCard
-  class="bg-neutral/50 border-[1px] p-4 rounded-lg shadow-2xl {isSpecial
+  class="bg-neutral/50 border-[1px] p-6 rounded-lg shadow-2xl {isSpecial
     ? 'border-accent shadow-accent/25 bg-neutral'
     : 'border-base-content/20 shadow-transparent hover:bg-neutral hover:border-accent hover:shadow-accent/10'}"
 >
