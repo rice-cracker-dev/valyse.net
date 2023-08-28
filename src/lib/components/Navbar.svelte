@@ -41,9 +41,6 @@
         <Icon icon="fa6-brands:github" />
       </button>
       <button class="btn btn-ghost text-xl">
-        <Icon icon="ph:sun" />
-      </button>
-      <button class="btn btn-ghost text-xl">
         <Icon icon="ph:user-fill" />
       </button>
     </div>
@@ -96,10 +93,6 @@
       <a href="/" class="btn btn-ghost justify-start">
         <Icon icon="ph:user-fill" />
         Dashboard
-      </a>
-      <a href="/" class="btn btn-ghost justify-start">
-        <Icon icon="ph:sun" />
-        Theme: Dark mode
       </a>
     </div>
   </div>
