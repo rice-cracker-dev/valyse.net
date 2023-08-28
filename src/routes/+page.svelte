@@ -3,6 +3,7 @@
   import FeatureCard from '$lib/components/FeatureCard.svelte';
   import Glow from '$lib/components/Glow.svelte';
   import { onMount } from 'svelte';
+  import GlowCard from '$lib/components/GlowCard.svelte';
 
   interface ValyseThemeInfo {
     name: string;
@@ -167,37 +168,39 @@
   <div class="relative flex flex-col items-center gap-4 mx-8 z-10 py-64">
     <p class="text-3xl font-outfit text-accent">Pricing</p>
     <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-16 w-full max-w-3xl">
-      <div class="border-[1px] border-base-content/20 bg-neutral/50 p-4 rounded-lg flex flex-col gap-4 font-outfit">
-        <p class="text-xs tracking-[0.25rem]">VALYSE</p>
-        <p class="text-2xl text-white">Free</p>
+      <GlowCard class="border-[1px] border-base-content/20 bg-neutral/50 p-4 rounded-lg font-outfit">
+        <div class="flex flex-col gap-4">
+          <p class="text-xs tracking-[0.25rem]">VALYSE</p>
+          <p class="text-2xl text-white">Free</p>
 
-        <div class="my-2 text-sm">
-          <p class="mb-2">Everything you need to start:</p>
-          <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Custom DLL</p>
-          <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Friends and Chat System</p>
-          <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Script Hub</p>
-          <p class="flex items-center gap-2"><Icon icon="ph:x-circle" /> A parental figure</p>
+          <div class="my-2 text-sm">
+            <p class="mb-2">Everything you need to start:</p>
+            <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Custom DLL</p>
+            <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Friends and Chat System</p>
+            <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Script Hub</p>
+            <p class="flex items-center gap-2"><Icon icon="ph:x-circle" /> A parental figure</p>
+          </div>
+
+          <button class="btn btn-neutral">Download now</button>
         </div>
+      </GlowCard>
 
-        <button class="btn btn-neutral">Download now</button>
-      </div>
+      <GlowCard class="border-[1px] border-accent shadow-2xl shadow-accent/25 bg-neutral/50 p-4 rounded-lg font-outfit">
+        <div class="flex flex-col gap-4">
+          <p class="text-xs tracking-[0.25rem]">VALYSE <span class="text-accent">PREMIUM</span></p>
+          <p class="text-2xl text-white">69.96 USD</p>
 
-      <div
-        class="border-[1px] border-accent shadow-2xl shadow-accent/25 bg-neutral/50 p-4 rounded-lg flex flex-col gap-4 font-outfit"
-      >
-        <p class="text-xs tracking-[0.25rem]">VALYSE <span class="text-accent">PREMIUM</span></p>
-        <p class="text-2xl text-white">69.96 USD</p>
+          <div class="my-2 text-sm">
+            <p class="mb-2">Everything you need to start:</p>
+            <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Everything from the Starter Plan</p>
+            <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> No ads</p>
+            <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Animated avatar</p>
+            <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> See who's using Valyse in your game</p>
+          </div>
 
-        <div class="my-2 text-sm">
-          <p class="mb-2">Everything you need to start:</p>
-          <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Everything from the Starter Plan</p>
-          <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> No ads</p>
-          <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> Animated avatar</p>
-          <p class="flex items-center gap-2"><Icon icon="ph:check-circle" /> See who's using Valyse in your game</p>
+          <button class="btn btn-accent">Give us your money NOW</button>
         </div>
-
-        <button class="btn btn-accent">Give us your money NOW</button>
-      </div>
+      </GlowCard>
     </div>
   </div>
 </div>

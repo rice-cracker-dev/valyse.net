@@ -9,7 +9,7 @@
 head,
 body,
 :root {
-  @apply overflow-x-hidden scroll-smooth bg-base-100 text-sm tracking-wide md:text-lg;
+  @apply overflow-x-hidden scroll-smooth bg-base-100 tracking-wide;
 
   font-family: 'Inter Variable', sans-serif;
 }
