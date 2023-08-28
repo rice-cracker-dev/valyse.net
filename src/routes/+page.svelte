@@ -1,6 +1,7 @@
 <script lang="ts">
   import Icon from '@iconify/svelte';
   import FeatureCard from '$lib/components/FeatureCard.svelte';
+  import Glow from '$lib/components/Glow.svelte';
   import { onMount } from 'svelte';
 
   interface ValyseThemeInfo {
@@ -113,14 +114,8 @@
 </div>
 
 <div id="features" class="relative">
-  <div class="absolute top-0 bottom-0 right-0 left-0 overflow-hidden opacity-25 select-none">
-    <div
-      class="absolute w-48 h-48 top-1/4 left-0 -translate-x-16 rounded-[50%] blur-[96px] bg-gradient-to-b from-[#5277FF] via-[#FF7475] to-[#FFD055]"
-    />
-    <div
-      class="absolute w-48 h-48 bottom-1/4 right-0 rounded-[50%] translate-x-16 blur-[96px] bg-gradient-to-b from-[#5277FF] via-[#FF7475] to-[#FFD055] overflow-hidden"
-    />
-  </div>
+  <Glow positionX="-16rem" positionY="10%" />
+  <Glow positionX="-16rem" positionY="10%" alignmentX="right" alignmentY="bottom" />
 
   <div class="relative flex flex-col items-center gap-4 mx-8 z-10 py-64">
     <p class="text-3xl font-outfit text-accent">Features</p>
@@ -167,11 +162,7 @@
 </div>
 
 <div id="pricing" class="relative">
-  <div class="absolute top-0 bottom-0 right-0 left-0 overflow-hidden opacity-25 z-0 select-none">
-    <div
-      class="absolute w-48 h-48 top-1/2 -translate-y-1/2 left-0 -translate-x-16 rounded-[50%] blur-[96px] bg-gradient-to-b from-[#5277FF] via-[#FF7475] to-[#FFD055]"
-    />
-  </div>
+  <Glow positionY="50%" offsetY="-50%" positionX="-16rem" />
 
   <div class="relative flex flex-col items-center gap-4 mx-8 z-10 py-64">
     <p class="text-3xl font-outfit text-accent">Pricing</p>
@@ -218,9 +209,7 @@
       <p class="text-base-content/50">The best exploit on the market at your fingertips.</p>
     </div>
     <div class="relative">
-      <div
-        class="absolute w-24 h-24 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 rounded-[50%] blur-[96px] bg-gradient-to-b from-[#5277FF] via-[#FF7475] to-[#FFD055] z-0"
-      />
+      <Glow positionX="50%" offsetX="-50%" positionY="50%" offsetY="-50%" opacity="10%" />
       <a
         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         class="relative btn border-0 bg-white/5 hover:bg-white/10 shadow-inner shadow-white/10 gap-4 z-10"

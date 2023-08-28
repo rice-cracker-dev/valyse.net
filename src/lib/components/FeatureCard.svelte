@@ -23,7 +23,7 @@
   }}
   bind:this={element}
   class="overflow-hidden relative border-[1px] bg-neutral/50 p-4 rounded-lg flex flex-col gap-4 shadow-2xl {isSpecial
-    ? 'border-accent shadow-accent/10 bg-neutral'
+    ? 'border-accent shadow-accent/25 bg-neutral'
     : 'border-base-content/20 shadow-transparent hover:bg-neutral hover:border-accent hover:shadow-accent/10'}"
 >
   <div class="absolute duration-0 blur-[96px] rounded-[50%]" style="left: {glowOffsetX}px; top: {glowOffsetY}px">

@@ -10,19 +10,19 @@
 
 <div class="relative">
   <div
-    class="absolute -top-12 left-32 right-32 h-32 bg-gradient-to-r from-[#3F64E9]/20 via-[#E93F3F]/40 to-[#FFB800]/20 rounded-[50%] z-0 blur-3xl"
+    class="absolute -top-24 left-32 right-32 h-48 bg-gradient-to-r from-[#3F64E9]/20 via-[#E93F3F]/40 to-[#FFB800]/20 rounded-[50%] z-0 blur-3xl"
   />
-  <div
-    class="absolute -top-12 left-32 right-32 bg-grid h-32 rounded-[50%]"
+  <!-- <div
+    class="absolute -top-24 left-32 right-32 bg-grid h-48 rounded-[50%]"
     style="-webkit-mask-image: radial-gradient(#000, transparent)"
-  />
+  /> -->
 </div>
 
 <div class="fixed top-8 lg:top-16 left-0 right-0 flex items-stretch justify-center z-[9999]">
   <div
     class="flex items-center max-w-7xl p-4 w-full bg-transparent border-[1px] mx-8 rounded-lg {scrollY > 0
       ? 'border-base-content/20 backdrop-blur-xl backdrop-brightness-50'
-      : 'border-transparent backdrop-brightness-[90%]'}"
+      : 'border-transparent backdrop-brightness-90'}"
   >
     <div class="flex items-center gap-2">
       <img src="/logo.svg" alt="" class="w-8" />
