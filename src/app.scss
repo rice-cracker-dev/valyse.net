@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+* {
+  @apply duration-150;
+}
+
+html,
+body {
+  @apply h-full;
+}
+
+.btn-icon-content {
+  display: grid;
+
+  grid-template-columns: 1rem 1fr;
+  gap: 0.25rem;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent box-decoration-clone;
+}
