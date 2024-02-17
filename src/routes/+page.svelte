@@ -1,14 +1,24 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+  import { isUserAgentMobile } from '$lib/validation';
+  import { desktop, mobile } from '$lib/components/particles/snow';
   import Particles from '$lib/components/Particles.svelte';
   import WhyCard from '$lib/components/WhyCard.svelte';
-  import options from '$lib/components/particles/snow';
+
+  let isMobile = false;
+
+  onMount(() => {
+    isMobile = isUserAgentMobile();
+  });
 </script>
 
-<Particles class="-z-10" {options} />
+{#key isMobile}
+  <Particles class="-z-10" options={isMobile ? mobile : desktop} />
+{/key}
 
 <section class="relative flex items-center lg:min-h-svh">
   <div
-    class="container relative mx-auto grid grid-cols-1 grid-rows-2 items-center justify-center gap-16 px-4 pt-64 lg:grid-cols-2 lg:grid-rows-1 lg:items-center lg:pt-0"
+    class="container relative mx-auto grid grid-cols-1 grid-rows-2 items-center justify-center gap-16 px-4 pt-16 md:pt-32 lg:grid-cols-2 lg:grid-rows-1 lg:items-center lg:pt-0"
   >
     <div class="flex flex-col items-center gap-2 lg:items-start">
       <h1 class="text-gradient-heading h1 font-bold">Valyse</h1>

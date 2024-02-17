@@ -1,4 +1,6 @@
-export default {
+import type { IOptions, RecursivePartial } from '@tsparticles/engine';
+
+export const desktop: RecursivePartial<IOptions> = {
   particles: {
     shape: {
       type: 'image',
@@ -19,7 +21,6 @@ export default {
 
       speed: { min: 4, max: 6 },
       angle: { offset: 5, value: 10 },
-      distance: { enable: true, distance: { min: 64, max: 128 } },
     },
     rotate: {
       value: {
@@ -35,6 +36,19 @@ export default {
     },
     number: {
       value: 16,
+    },
+  },
+};
+
+export const mobile: RecursivePartial<IOptions> = {
+  ...desktop,
+  particles: {
+    ...desktop.particles,
+    number: { value: 6 },
+    size: { value: { min: 8, max: 48 } },
+    move: {
+      ...desktop.particles?.move,
+      speed: { min: 2, max: 4 },
     },
   },
 };
