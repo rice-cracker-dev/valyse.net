@@ -11,7 +11,7 @@ export default {
     opacity: {
       value: 0.15,
     },
-    size: { value: { min: 32, max: 64 } },
+    size: { value: { min: 16, max: 96 } },
     move: {
       enable: true,
       random: true,

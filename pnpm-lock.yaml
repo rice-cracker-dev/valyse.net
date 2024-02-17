@@ -149,9 +149,6 @@ dependencies:
   '@tsparticles/updater-wobble':
     specifier: 3.1.0
     version: 3.1.0
-  tsparticles:
-    specifier: 3.1.0
-    version: 3.1.0
 
 devDependencies:
   '@skeletonlabs/skeleton':
@@ -3100,24 +3097,6 @@ packages:
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
-
-  /tsparticles@3.1.0:
-    resolution: {integrity: sha512-fYgcOuZrgRXiER5GZX1NCtAFTwmR5gJiN8DVRO+cLjWDAP4ZE+aJlLb0bjM2nn4RQ8ABfxrB5hrTDVi8Mz8hkQ==}
-    dependencies:
-      '@tsparticles/engine': 3.1.0
-      '@tsparticles/interaction-external-trail': 3.1.0
-      '@tsparticles/plugin-absorbers': 3.1.0
-      '@tsparticles/plugin-emitters': 3.1.0
-      '@tsparticles/plugin-emitters-shape-circle': 3.1.0
-      '@tsparticles/plugin-emitters-shape-square': 3.1.0
-      '@tsparticles/shape-text': 3.1.0
-      '@tsparticles/slim': 3.1.0
-      '@tsparticles/updater-destroy': 3.1.0
-      '@tsparticles/updater-roll': 3.1.0
-      '@tsparticles/updater-tilt': 3.1.0
-      '@tsparticles/updater-twinkle': 3.1.0
-      '@tsparticles/updater-wobble': 3.1.0
-    dev: false
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}

@@ -22,3 +22,18 @@ body {
 .text-gradient {
   @apply bg-clip-text text-transparent box-decoration-clone;
 }
+
+.text-gradient-heading {
+  @apply text-gradient;
+
+  background-image: linear-gradient(to bottom,
+    rgb(var(--color-primary-600)),
+    rgb(var(--color-primary-700)));
+
+  &:is(.dark &) {
+    background-image: linear-gradient(to bottom,
+      rgb(var(--color-primary-50)),
+      rgb(var(--color-primary-300)) 50%,
+      rgb(var(--color-primary-400)) 100%);
+  }
+}

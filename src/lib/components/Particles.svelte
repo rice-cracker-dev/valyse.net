@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { default as Particles, particlesInit } from '@tsparticles/svelte';
-  import { loadFull } from 'tsparticles';
+  import { default as Particles } from '@tsparticles/svelte';
   import { onMount } from 'svelte';
 
   let component: typeof Particles;
@@ -11,10 +10,6 @@
 
   onMount(async () => {
     component = await import('@tsparticles/svelte').then((o) => o.default);
-  });
-
-  void particlesInit(async (engine) => {
-    loadFull(engine);
   });
 </script>
 

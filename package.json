@@ -91,7 +91,6 @@
     "@tsparticles/updater-stroke-color": "3.1.0",
     "@tsparticles/updater-tilt": "3.1.0",
     "@tsparticles/updater-twinkle": "3.1.0",
-    "@tsparticles/updater-wobble": "3.1.0",
-    "tsparticles": "3.1.0"
+    "@tsparticles/updater-wobble": "3.1.0"
   }
 }
