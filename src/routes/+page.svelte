@@ -13,7 +13,7 @@
 </script>
 
 {#key isMobile}
-  <Particles class="-z-10" options={isMobile ? mobile : desktop} />
+  <Particles class="absolute inset-0 overflow-hidden" options={isMobile ? mobile : desktop} />
 {/key}
 
 <section class="relative flex items-center lg:min-h-svh">
@@ -39,10 +39,10 @@
   </div>
 </section>
 
-<section class="bg-surface-100-800-token relative mt-16">
+<section class="bg-surface-100-800-token relative z-20 mt-16">
   <div class="container relative mx-auto px-4 py-8">
     <div class="absolute bottom-1/2 right-0 hidden translate-y-1/2 lg:block">
-      <div class="h-[20rem]">
+      <div class="z-10 h-[20rem]">
         <img src="/heart.png" alt="" class="absolute h-full opacity-50 blur-xl" />
         <img src="/heart.png" alt="" class="z-10 h-full" />
       </div>
@@ -58,7 +58,7 @@
   </div>
 </section>
 
-<section class="bg-surface-50-900-token">
+<section class="bg-surface-50-900-token relative z-10">
   <div class="container mx-auto flex flex-col items-center gap-4 px-4 py-48">
     <h2 class="text-gradient-heading h2 text-center font-bold">Why Valyse?</h2>
     <p class="text-surface-600-300-token text-center text-xl md:max-w-[50%]">

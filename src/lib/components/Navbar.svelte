@@ -17,8 +17,8 @@
 >
   <div class="container mx-auto flex items-center">
     <a href="/">
-      <img src="/valyse-logo.svg" alt="Home" class="h-8 lg:hidden" />
-      <img src="/valyse-logo-long.svg" alt="Home" class="hidden h-8 lg:block" />
+      <img src="/valyse-logo.svg" alt="Home" class="h-10 lg:hidden" />
+      <img src="/valyse-logo-long.svg" alt="Home" class="hidden h-10 lg:block" />
     </a>
 
     <div class="hidden flex-1 items-center justify-center gap-2 md:flex">
