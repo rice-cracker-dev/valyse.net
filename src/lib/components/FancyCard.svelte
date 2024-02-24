@@ -37,5 +37,5 @@
     />
   {/if}
 
-  <div class="z-10"><slot /></div>
+  <div class="relative z-10 h-full"><slot /></div>
 </div>

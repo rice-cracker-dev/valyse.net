@@ -9,7 +9,7 @@
 
 <FancyCard
   componentClass="card relative overflow-hidden p-4 {isSpecial
-    ? 'variant-outline-primary'
+    ? 'variant-outline-primary shadow-2xl shadow-primary-400/25'
     : 'variant-outline-surface'}"
 >
   <div class="flex items-center gap-2">

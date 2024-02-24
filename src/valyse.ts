@@ -5,7 +5,7 @@ export const valyse: CustomThemeConfig = {
   properties: {
     // =~= Theme Properties =~=
     '--theme-font-family-base': `"Inter Variable"`,
-    '--theme-font-family-heading': `"Inter Variable"`,
+    '--theme-font-family-heading': `"Outfit Variable"`,
     '--theme-font-color-base': '0 0 0',
     '--theme-font-color-dark': '255 255 255',
     '--theme-rounded-base': '8px',

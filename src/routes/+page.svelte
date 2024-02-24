@@ -35,7 +35,7 @@
       <button type="button" class="variant-filled-primary btn my-8">Get started</button>
     </div>
 
-    <img src="/thumbsup.jpg" alt="" class="mx-auto h-96" />
+<!--    <img src="/thumbsup.jpg" alt="" class="mx-auto h-96" />-->
   </div>
 </section>
 
