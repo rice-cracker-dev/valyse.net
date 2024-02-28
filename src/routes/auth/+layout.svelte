@@ -1,0 +1,1 @@
+<div class="card mx-auto"></div>

@@ -3,7 +3,9 @@
 // and what to do when importing types
 declare namespace App {
   // interface Locals {}
-  // interface PageData {}
+  interface PageData {
+    navbarFixed?: boolean;
+  }
   // interface Error {}
   // interface Platform {}
 }

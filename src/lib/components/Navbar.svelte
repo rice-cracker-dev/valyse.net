@@ -1,5 +1,6 @@
 <script lang="ts">
   import { getDrawerStore } from '@skeletonlabs/skeleton';
+  import { page } from '$app/stores';
   import { links } from './navbar';
   import Icon from '@iconify/svelte';
   import NavbarItem from './NavbarItem.svelte';
@@ -12,10 +13,12 @@
 <svelte:window bind:scrollY />
 
 <nav
-  class="fixed top-0 z-40 flex w-full items-center p-4 {scrollY > 10 &&
+  class="{$page.data.navbarFixed
+    ? 'fixed'
+    : 'sticky'} top-0 z-40 flex w-full items-center {scrollY > 10 &&
     'backdrop-blur-xl backdrop-brightness-75'}"
 >
-  <div class="container mx-auto flex items-center">
+  <div class="container mx-auto flex items-center p-4">
     <a href="/">
       <img src="/valyse-logo.svg" alt="Home" class="h-10 lg:hidden" />
       <img src="/valyse-logo-long.svg" alt="Home" class="hidden h-10 lg:block" />
